@@ -1,0 +1,3 @@
+Stuff-1/HW2/BLB/BLB_lin_reg_job.R 		:for my the bag of little bootstraps
+Stuff-1/HW2/Streaming/mapper.py & reducer.py 	:for my Mapreduce job
+Stuff-1/HW2/hive/hive.txt 			:for hive code of creating table for group mean and variance.
