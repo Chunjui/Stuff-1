@@ -1,0 +1,8 @@
+create table te (col1 int, col2 float)
+row format delimited fields terminated by '\t';
+load  data local  inpath '/home/hadoop/data/groups.txt' into  table te;
+insert overwrite local directory '/home/hadoop/data/average'
+select te.col1, avg(te.col2) from te group by te.col1;
+insert overwrite local directory '/home/hadoop/data/var'
+select te.col1,  var_samp(te.col2) from te group by te.col1;
+
